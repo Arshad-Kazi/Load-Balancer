@@ -15,5 +15,5 @@ class RoundRobin:
             backend = self._queue[0]
             self._queue.rotate(-1)
             if backend.healthy:
-                return backend
+                return backend  
         return None
